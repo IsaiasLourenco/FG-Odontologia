@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FG - Odontologia e Estética</title>
+    <!-- Ícone -->
+    <link rel="shortcut icon" href="lib/img/icone.ico" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="lib/css/style.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- CARROSSEL -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <header class="main-header" id="home">
+
+        <div class="whatsapp-link">
+            <a class="bg-gradiente-verde bg-gradiente-verde-hover"
+                href="https://api.whatsapp.com/send?phone=551938916797&text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20com%20a%20Clínica%20FG%20Odontologia%20e%20Estética."
+                target="_blank" title="Marque sua consulta" aria-label="WhatsApp">
+                AGENDE SUA CONSULTA
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
+
+        <div class="logo">
+            <img src="lib/img/FundoCinzaLetraBranca.png" alt="Logo — FG Odontologia e Estética">
+        </div>
+
+        <div class="redes-sociais">
+            <a href="tel:+5511938916797" aria-label="Ligar"><i class="fa-solid fa-phone"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61573681252329#" target="_blank" aria-label="Facebook"><i
+                    class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/fgodontologiaestetica/" target="_blank" aria-label="Instagram"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a href="https://maps.app.goo.gl/V1C6mYrbuUcZnuqXA" target="_blank" aria-label="Mapa"><i
+                    class="fa-solid fa-map-marker-alt"></i></a>
+        </div>
+
+    </header>
+
+    <div class="divider bg-gradiente-dourado-contrario"></div>
+
+    <div class="nav">
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#proposito">NOSSO PROPÓSITO</a></li>
+            <li>CORPO CLÍNICO</li>
+            <li>ESPECIALIDADES</li>
+            <li>AGENDAMENTO</li>
+            <li>CONTATO</li>
+        </ul>
+    </div>
+
+    <div class="divider bg-gradiente-dourado"></div>
+
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="lib/img/car-01.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="lib/img/car-02.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="lib/img/car-03.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="lib/img/car-04.jpg" alt=""></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="divider bg-gradiente-dourado"></div>
+
+    <div class="proposito" id="proposito">
+        <h2>Nosso Propósito</h2>
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+            Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+    </div>
+
+    <div class="divider bg-gradiente-dourado"></div>
+
+</body>
+
+<script>
+    const swiper = new Swiper('.swiper', {
+        loop: true,
+        pagination: { el: '.swiper-pagination' },
+        autoplay: { delay: 2500 },
+        navigation: {         // setas
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
+
+</html>
