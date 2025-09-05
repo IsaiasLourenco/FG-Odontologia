@@ -166,3 +166,12 @@
   object-fit: cover;
   /* preenche mantendo proporção da imagem */
 }
+
+.dev-partner {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.dev-partner a:hover {
+    text-decoration: underline;
+}
