@@ -179,3 +179,33 @@
         text-align: center;
     }
 }
+
+@media (max-width: 768px) {
+    .esquerda {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: calc(100% - 40px);
+        max-width: 350px;
+        background: bisque;
+        padding: 15px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        z-index: 999;
+    }
+
+    .esquerda h2 {
+        font-size: 20px; /* menor pra não ficar gigante */
+        padding: 10px 0;
+    }
+
+    .esquerda h4 {
+        font-size: 14px;
+    }
+
+    .direita {
+        padding: 20px;
+    }
+}
+    

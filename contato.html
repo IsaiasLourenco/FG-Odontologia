@@ -15,7 +15,7 @@
     <!-- CARROSSEL -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    
+
 </head>
 
 <body>
@@ -68,30 +68,51 @@
 
     <div class="divider bg-gradiente-dourado"></div>
 
-    <div class="swiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="lib/img/car-01.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="lib/img/car-02.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="lib/img/car-03.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="lib/img/car-04.jpg" alt=""></div>
+    <div class="container">
+        <div class="esquerda">
+            <div class="contato" id="contato">
+                <i class="fa-brands fa-whatsapp"></i>
+                <h4>Mande uma mensagem</h4>
+                <h2>Para agendar sua consulta</h2>
+                <h2>por whatsapp</h2>
+                <a class="bg-gradiente-verde bg-gradiente-verde-hover"
+                    href="https://api.whatsapp.com/send?phone=551938916797&text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avaliação%20na%20FG%20Odontologia%20Estética."
+                    target="_blank" title="Marque sua consulta" aria-label="WhatsApp">
+                    ENVIAR MENSAGEM
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
         </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-    </div>
 
-    <div class="divider bg-gradiente-dourado"></div>
+        <div class="direita">
+            <div class="agendamento" id="agendamento">
+                <h4>Agende sua consulta por telefone</h4>
+                <a href="tel:+5511938916797" aria-label="Ligar">
+                    <i class="fa-solid fa-phone preto fonte20"></i>
+                </a>
 
-    <div class="proposito" id="proposito">
-        <h2>Nosso Propósito</h2>
-        <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
-            Aldus PageMaker including versions of Lorem Ipsum.
-        </p>
+                <h4>Horário de atendimento:</h4>
+                <p>2ª a 6ª das 09:00-11:00 e das 14:00-18:00</p>
+                <p>Sábado das 09:00-13:00</p>
+
+                <div class="contatos">
+                    <a href="https://api.whatsapp.com/send?phone=551938916797&text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20na%20FG%20Odontologia%20Est%C3%A9tica."
+                        target="_blank" title="Marque sua consulta" aria-label="WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i> WhatsApp: (19) 3891-6797
+                    </a>
+
+                    <a href="mailto:contato@fgodontologia.com" aria-label="E-mail">
+                        <i class="fa-solid fa-envelope"></i> contato@fgodontologia.com
+                    </a>
+
+                    <a href="https://maps.app.goo.gl/V1C6mYrbuUcZnuqXA" target="_blank"
+                        aria-label="Endereço">
+                        <i class="fa-solid fa-location-dot"></i> Rua São José, 20 - Centro, Mogi Guaçu/SP
+                    </a>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <div class="divider bg-gradiente-dourado"></div>
@@ -106,7 +127,7 @@
 </body>
 
 <!-- JavaScript Hamburguer -->
-     <script type="text/JavaScript" src="lib/js/menu.js"></script>
-     <script type="text/JavaScript" src="lib/js/swipper.js"></script>
+<script type="text/JavaScript" src="lib/js/menu.js"></script>
+<script type="text/JavaScript" src="lib/js/swipper.js"></script>
 
 </html>
