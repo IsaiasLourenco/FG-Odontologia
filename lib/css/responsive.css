@@ -34,8 +34,9 @@
 
     /* Ajustes finos */
     .logo img {
-        height: 50px;
-        max-width: 140px;
+        height: 80px !important;      /* aumenta o logo */
+        width: auto !important;       /* mantém a proporção */
+        max-width: none !important; 
     }
 
     .whatsapp-link a {
@@ -44,7 +45,6 @@
         font-size: 14px;
     }
 }
-
 
 @media (max-width: 768px) {
 
