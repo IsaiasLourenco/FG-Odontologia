@@ -9,11 +9,13 @@
     <link rel="shortcut icon" href="lib/img/icone.ico" type="image/x-icon">
     <!-- CSS -->
     <link rel="stylesheet" href="lib/css/style.css">
+    <link rel="stylesheet" href="lib/css/responsive.css">
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- CARROSSEL -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    
 </head>
 
 <body>
@@ -45,6 +47,13 @@
     </header>
 
     <div class="divider bg-gradiente-dourado-contrario"></div>
+
+    <!-- Botão Hamburger -->
+    <div class="hamburger-menu txt-c">
+        <span class="hamburger-icon">&#9776;</span>
+        <span class="hamburger-text">Menu</span>
+    </div>
+
 
     <div class="nav">
         <ul>
@@ -96,16 +105,8 @@
 
 </body>
 
-<script>
-    const swiper = new Swiper('.swiper', {
-        loop: true,
-        pagination: { el: '.swiper-pagination' },
-        autoplay: { delay: 2500 },
-        navigation: {         // setas
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });
-</script>
+<!-- JavaScript Hamburguer -->
+     <script type="text/JavaScript" src="lib/js/menu.js"></script>
+     <script type="text/JavaScript" src="lib/js/swipper.js"></script>
 
 </html>

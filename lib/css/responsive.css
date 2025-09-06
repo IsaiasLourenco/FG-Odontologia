@@ -1,0 +1,181 @@
+/* ================================
+   Layout Topo: WhatsApp | Logo | Redes
+================================ */
+@media (max-width: 1024px) {
+    .main-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    /* Ordem dos elementos */
+    .redes-sociais {
+        order: 1;
+        /* fica em cima */
+        display: flex;
+        /* mantém os ícones lado a lado */
+        justify-content: center;
+        /* centraliza horizontalmente */
+        gap: 12px;
+        /* espaço entre os ícones */
+    }
+
+    .logo {
+        order: 2;
+        /* no meio */
+    }
+
+    .whatsapp-link {
+        order: 3;
+        /* embaixo */
+    }
+
+    /* Ajustes finos */
+    .logo img {
+        height: 50px;
+        max-width: 140px;
+    }
+
+    .whatsapp-link a {
+        display: inline-block;
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .top-header,
+    .main-header>.whatsapp-link,
+    .main-header>.logo,
+    .main-header>.redes-sociais {
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .redes-sociais {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .logo img {
+        height: 60px;
+    }
+
+    .whatsapp-link a {
+        display: inline-block;
+    }
+}
+
+/* ================================
+   Nav Menu
+================================ */
+@media (max-width: 1024px) {
+    .nav ul {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .nav ul li {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav ul li {
+        margin: 8px 0;
+    }
+}
+
+/* ================================
+   Swiper Carrossel
+================================ */
+@media (max-width: 1024px) {
+    .swiper {
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .swiper {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .swiper {
+        height: 200px;
+    }
+}
+
+/* Esconde o menu hamburger em telas grandes */
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Ícone do hamburger */
+.hamburger-icon {
+    font-size: 20px;
+}
+
+/* Menu vertical escondido */
+.nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    transition: max-height 0.3s ease;
+    overflow: hidden;
+}
+
+/* =======================
+   Responsividade Hamburger
+======================= */
+@media (max-width: 768px) {
+
+    /* Esconde nav horizontal */
+    .nav ul {
+        flex-direction: column;
+        max-height: 0;
+    }
+
+    /* Mostra hamburger */
+    .hamburger-menu {
+        display: flex;
+        justify-content: center;
+        /* centraliza horizontalmente */
+        align-items: center;
+        /* centraliza verticalmente se precisar */
+        gap: 8px;
+        /* espaço entre o ícone e o texto */
+        font-weight: bold;
+        font-size: 16px;
+        margin: 10px 0;
+    }
+
+    /* Quando o menu estiver ativo */
+    .nav.active ul {
+        max-height: 500px;
+        /* ajusta conforme quantidade de itens */
+    }
+
+    .nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
