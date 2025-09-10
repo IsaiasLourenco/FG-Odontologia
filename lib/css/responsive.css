@@ -34,9 +34,11 @@
 
     /* Ajustes finos */
     .logo img {
-        height: 80px !important;      /* aumenta o logo */
-        width: auto !important;       /* mantém a proporção */
-        max-width: none !important; 
+        height: 80px !important;
+        /* aumenta o logo */
+        width: auto !important;
+        /* mantém a proporção */
+        max-width: none !important;
     }
 
     .whatsapp-link a {
@@ -191,12 +193,13 @@
         background: bisque;
         padding: 15px;
         border-radius: 12px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         z-index: 999;
     }
 
     .esquerda h2 {
-        font-size: 20px; /* menor pra não ficar gigante */
+        font-size: 20px;
+        /* menor pra não ficar gigante */
         padding: 10px 0;
     }
 
@@ -207,5 +210,68 @@
     .direita {
         padding: 20px;
     }
+
+    /* FOOTER — responsivo: empilha em telas pequenas */
+    @media (max-width: 768px) {
+        .footer-container {
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "logo"
+                "redes"
+                "topo"
+                "responsavel"
+                "endereco"
+                "horario"
+                "contatos"
+                "politica"
+                "dev";
+            text-align: center;
+        }
+
+        /* centraliza os elementos empilhados */
+        .logo-footer,
+        .redes-sociais-footer,
+        .footer-topo,
+        .footer-responsavel,
+        .footer-endereco,
+        .footer-horario,
+        .footer-contatos,
+        .footer-politica,
+        .dev-partner {
+            justify-self: center;
+            text-align: center;
+        }
+
+        .logo-footer img {
+            width: 200px;
+            height: 200px;
+        }
+
+        .footer .footer-container .footer-horario p {
+            font-size: 14px;
+            font-weight: bold;
+            display: inline-block;
+        }
+        
+        .footer .footer-container .footer-contatos .zap{
+            font-size: 14px;
+            font-weight: bold;
+            display: inline-block;
+        }
+        
+        .footer .footer-container .footer-contatos .mail{
+            font-size: 16px;
+            margin-top: 10px;
+            font-weight: bold;
+            display: inline-block;
+        }
+        
+        .footer .footer-container .footer-politica{
+            font-size: 14px;
+            font-weight: bold;
+            display: flex;
+            flex-wrap: nowrap;
+        }
+    }
+
 }
-    
