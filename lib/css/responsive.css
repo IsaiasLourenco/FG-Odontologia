@@ -270,3 +270,33 @@
     }
 
 }
+
+@media (max-width: 768px) {
+    .corpo, .especialidades {
+        padding: 20px; /* Menos espaçamento em telas menores */
+    }
+
+    .corpo h2, .especialidades h3 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .politica-privacidade {
+        padding: 20px; /* Menos espaçamento em telas menores */
+    }
+
+    .politica-privacidade h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .proposito {
+        padding: 20px; /* Menos espaçamento em telas menores */
+    }
+
+    .proposito h2 {
+        font-size: 2rem;
+    }
+}
