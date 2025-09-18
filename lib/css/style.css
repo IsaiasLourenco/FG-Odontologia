@@ -57,7 +57,6 @@
   width: 100%;
   height: 10px;
   background-color: #C0C0C0;
-  margin-top: 5px;
 }
 
 .bg-gradiente-verde {
@@ -151,6 +150,16 @@
   padding: 40px 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 14px;
+  background: linear-gradient(135deg, #c0c0c0, #e0e0e0, #a9a9a9);
+  color: #111;
+}
+
+.divider {
+  margin: 0;
+}
+
+.divider.bg-gradiente-prata {
+  margin: 0; /* remove margin */
 }
 
 .footer-container {
@@ -439,17 +448,21 @@
   border: 2px solid #ccc;
   border-radius: 8px;
   overflow: hidden;
-  max-width: 350px; /* controla o tamanho no desktop */
+  max-width: 350px;
+  /* controla o tamanho no desktop */
 }
 
 .mapa iframe {
   display: block;
   width: 100%;
-  height: 200px; /* altura do quadrado */
+  height: 200px;
+  /* altura do quadrado */
 }
 
 hr {
   border: 0;
-  border-top: 1px solid #ccc; /* cor da linha */
-  margin: 15px 0; /* espaço antes/depois */
+  border-top: 1px solid #ccc;
+  /* cor da linha */
+  margin: 15px 0;
+  /* espaço antes/depois */
 }
