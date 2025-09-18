@@ -9,6 +9,45 @@
 }
 
 /* Botão do WhatsApp */
+
+.proposito .whatsapp-link a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #18953b;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 18px;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.proposito .whatsapp-link a:hover {
+  background-color: #5dc87b;
+  color: white;
+}
+
+.especialidades .whatsapp-link a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #18953b;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 18px;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.especialidades .whatsapp-link a:hover {
+  background-color: #5dc87b;
+  color: white;
+}
+
 .whatsapp-link a {
   display: inline-flex;
   align-items: center;
@@ -160,7 +199,8 @@
 }
 
 .divider.bg-gradiente-prata {
-  margin: 0; /* remove margin */
+  margin: 0;
+  /* remove margin */
 }
 
 .footer-container {
@@ -468,159 +508,215 @@ hr {
 }
 
 .politica-privacidade {
-    background-color: #f9f9f9; /* Cor de fundo suave */
-    padding: 40px 20px; /* Espaçamento interno */
-    margin: 20px auto; /* Margem entre a política e outros elementos */
-    max-width: 800px; /* Largura máxima para melhor leitura */
-    border-radius: 8px; /* Bordas arredondadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para destaque */
+  background-color: #f9f9f9;
+  /* Cor de fundo suave */
+  padding: 40px 20px;
+  /* Espaçamento interno */
+  margin: 20px auto;
+  /* Margem entre a política e outros elementos */
+  max-width: 800px;
+  /* Largura máxima para melhor leitura */
+  border-radius: 8px;
+  /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Sombra suave para destaque */
 }
 
 .politica-privacidade h2 {
-    text-align: center;
-    font-size: 2.5rem; /* Tamanho de título */
-    color: #333; /* Cor do título */
-    margin-bottom: 20px; /* Espaço abaixo do título */
-    font-family: 'Arial', sans-serif; /* Fonte moderna */
+  text-align: center;
+  font-size: 2.5rem;
+  /* Tamanho de título */
+  color: #333;
+  /* Cor do título */
+  margin-bottom: 20px;
+  /* Espaço abaixo do título */
+  font-family: 'Arial', sans-serif;
+  /* Fonte moderna */
 }
 
 .politica-privacidade h3 {
-    font-size: 1.6rem;
-    color: #444;
-    margin-top: 20px;
-    font-weight: bold;
+  font-size: 1.6rem;
+  color: #444;
+  margin-top: 20px;
+  font-weight: bold;
 }
 
 .politica-privacidade p {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.6; /* Maior espaçamento entre linhas para melhor leitura */
-    text-align: justify;
-    margin-bottom: 15px;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  /* Maior espaçamento entre linhas para melhor leitura */
+  text-align: justify;
+  margin-bottom: 15px;
 }
 
 .politica-privacidade ul {
-    list-style: inside; /* Marca os itens dentro do bloco */
-    padding-left: 0; /* Remove o espaçamento da lista */
+  list-style: inside;
+  /* Marca os itens dentro do bloco */
+  padding-left: 0;
+  /* Remove o espaçamento da lista */
 }
 
 .politica-privacidade ul li {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 10px;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
 }
 
 .politica-privacidade a {
-    color: #000000; /* Cor para links */
-    text-decoration: none; /* Remove o sublinhado */
-    font-weight: bold;
+  color: #000000;
+  /* Cor para links */
+  text-decoration: none;
+  /* Remove o sublinhado */
+  font-weight: bold;
 }
 
 .politica-privacidade a:hover {
-    text-decoration: none; /* Sublinha o link ao passar o mouse */
-    color: #C0C0C0; /* Muda a cor ao passar o mouse */
+  text-decoration: none;
+  /* Sublinha o link ao passar o mouse */
+  color: #C0C0C0;
+  /* Muda a cor ao passar o mouse */
 }
 
 .politica-privacidade .divider {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    border-top: 1px solid #ddd; /* Linha divisória sutil */
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-top: 1px solid #ddd;
+  /* Linha divisória sutil */
 }
 
-.corpo, .especialidades {
-    background-color: #f9f9f9; /* Fundo suave */
-    padding: 40px 20px; /* Espaçamento interno */
-    margin: 20px auto; /* Margem entre os outros elementos */
-    max-width: 800px; /* Largura máxima para boa leitura */
-    border-radius: 8px; /* Bordas arredondadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+.corpo,
+.especialidades {
+  background-color: #f9f9f9;
+  /* Fundo suave */
+  padding: 40px 20px;
+  /* Espaçamento interno */
+  margin: 20px auto;
+  /* Margem entre os outros elementos */
+  max-width: 800px;
+  /* Largura máxima para boa leitura */
+  border-radius: 8px;
+  /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Sombra suave */
 }
 
-.corpo h2, .especialidades h3 {
-    text-align: center;
-    font-size: 2.5rem; /* Tamanho do título principal */
-    color: #333; /* Cor escura para títulos */
-    margin-bottom: 20px;
-    font-family: 'Arial', sans-serif; /* Fonte moderna */
+.corpo h2,
+.especialidades h3 {
+  text-align: center;
+  font-size: 2.5rem;
+  /* Tamanho do título principal */
+  color: #333;
+  /* Cor escura para títulos */
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+  /* Fonte moderna */
 }
 
-.corpo h3, .especialidades h4 {
-    font-size: 1.8rem;
-    color: #444;
-    margin-top: 20px;
-    font-weight: bold;
+.corpo h3,
+.especialidades h4 {
+  font-size: 1.8rem;
+  color: #444;
+  margin-top: 20px;
+  font-weight: bold;
 }
 
-.corpo p, .especialidades p {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.6; /* Maior espaçamento entre linhas para leitura */
-    text-align: justify;
-    margin-bottom: 15px;
+.corpo p,
+.especialidades p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  /* Maior espaçamento entre linhas para leitura */
+  text-align: justify;
+  margin-bottom: 15px;
 }
 
-.corpo ul, .especialidades ul {
-    list-style: inside; /* Marca os itens dentro do bloco */
-    padding-left: 0;
+.corpo ul,
+.especialidades ul {
+  list-style: inside;
+  /* Marca os itens dentro do bloco */
+  padding-left: 0;
 }
 
-.corpo ul li, .especialidades ul li {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 10px;
+.corpo ul li,
+.especialidades ul li {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
 }
 
-.corpo a, .especialidades a {
-    color: #000000; /* Cor para links */
-    text-decoration: none; /* Remove o sublinhado */
-    font-weight: bold;
+.corpo a,
+.especialidades a {
+  color: #000000;
+  /* Cor para links */
+  text-decoration: none;
+  /* Remove o sublinhado */
+  font-weight: bold;
 }
 
-.corpo a:hover, .especialidades a:hover {
-    text-decoration: none; /* Sublinha o link ao passar o mouse */
-    color: #C0C0C0; /* Muda a cor ao passar o mouse */
+.corpo a:hover,
+.especialidades a:hover {
+  text-decoration: none;
+  /* Sublinha o link ao passar o mouse */
+  color: #C0C0C0;
+  /* Muda a cor ao passar o mouse */
 }
 
 .divider {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    border-top: 1px solid #ddd; /* Linha divisória sutil */
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-top: 1px solid #ddd;
+  /* Linha divisória sutil */
 }
 
 .proposito {
-    background-color: #f9f9f9; /* Fundo suave */
-    padding: 40px 20px; /* Espaçamento interno */
-    margin: 20px auto; /* Margem entre os outros elementos */
-    max-width: 800px; /* Largura máxima para boa leitura */
-    border-radius: 8px; /* Bordas arredondadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  background-color: #f9f9f9;
+  /* Fundo suave */
+  padding: 40px 20px;
+  /* Espaçamento interno */
+  margin: 20px auto;
+  /* Margem entre os outros elementos */
+  max-width: 800px;
+  /* Largura máxima para boa leitura */
+  border-radius: 8px;
+  /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Sombra suave */
 }
 
 .proposito h2 {
-    text-align: center;
-    font-size: 2.5rem; /* Tamanho do título principal */
-    color: #333; /* Cor escura para títulos */
-    margin-bottom: 20px;
-    font-family: 'Arial', sans-serif; /* Fonte moderna */
+  text-align: center;
+  font-size: 2.5rem;
+  /* Tamanho do título principal */
+  color: #333;
+  /* Cor escura para títulos */
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+  /* Fonte moderna */
 }
 
 .proposito p {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.6; /* Maior espaçamento entre linhas para leitura */
-    text-align: justify;
-    margin-bottom: 20px;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  /* Maior espaçamento entre linhas para leitura */
+  text-align: justify;
+  margin-bottom: 20px;
 }
 
 .proposito a {
-    color: #000000; /* Cor para links */
-    text-decoration: none; /* Remove o sublinhado */
-    font-weight: bold;
+  color: #000000;
+  /* Cor para links */
+  text-decoration: none;
+  /* Remove o sublinhado */
+  font-weight: bold;
 }
 
 .proposito a:hover,
 .proposito a:focus,
 .proposito a:visited {
-    text-decoration: none; /* Sublinha o link ao passar o mouse */
-    color: #C0C0C0; /* Muda a cor ao passar o mouse */
+  text-decoration: none;
+  /* Sublinha o link ao passar o mouse */
+  color: #C0C0C0;
+  /* Muda a cor ao passar o mouse */
 }
