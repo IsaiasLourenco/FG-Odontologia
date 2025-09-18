@@ -34,11 +34,8 @@
 
     /* Ajustes finos */
     .logo img {
-        height: 80px !important;
-        /* aumenta o logo */
-        width: auto !important;
-        /* mantém a proporção */
-        max-width: none !important;
+        width: 200px;
+        height: 200px;
     }
 
     .whatsapp-link a {
@@ -252,21 +249,21 @@
             font-weight: bold;
             display: inline-block;
         }
-        
-        .footer .footer-container .footer-contatos .zap{
+
+        .footer .footer-container .footer-contatos .zap {
             font-size: 14px;
             font-weight: bold;
             display: inline-block;
         }
-        
-        .footer .footer-container .footer-contatos .mail{
+
+        .footer .footer-container .footer-contatos .mail {
             font-size: 16px;
             margin-top: 10px;
             font-weight: bold;
             display: inline-block;
         }
-        
-        .footer .footer-container .footer-politica{
+
+        .footer .footer-container .footer-politica {
             font-size: 14px;
             font-weight: bold;
             display: flex;

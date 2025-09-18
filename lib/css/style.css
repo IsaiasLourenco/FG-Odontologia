@@ -29,8 +29,8 @@
 
 /* Logo central */
 .logo img {
-  height: 200px;
-  max-width: 160px;
+  height: 400px;
+  width: 400px;
   object-fit: contain;
   cursor: pointer;
 }
@@ -68,6 +68,11 @@
 
 .bg-gradiente-verde-hover:hover {
   background-image: linear-gradient(90deg, #74de97, #097c30);
+  transition: .40s ease-in-out;
+}
+
+.bg-gradiente-prata {
+  background-image: linear-gradient(90deg, #000000, #C0C0C0, #000000);
   transition: .40s ease-in-out;
 }
 
@@ -153,7 +158,8 @@
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr; /* três colunas */
+  grid-template-columns: 1fr 1fr 1fr;
+  /* três colunas */
   grid-template-areas:
     "logo logo logo"
     "redes topo responsavel"
@@ -166,18 +172,60 @@
 }
 
 /* Áreas */
-.logo-footer { grid-area: logo; justify-self: center; align-self: center; }
-.redes-sociais-footer { grid-area: redes; justify-self: start; align-self: center; display:flex; gap:12px; align-items:center; }
-.footer-topo { grid-area: topo; justify-self: center; align-self: center; }
-.footer-responsavel { grid-area: responsavel; justify-self: end; text-align: right; }
+.logo-footer {
+  grid-area: logo;
+  justify-self: center;
+  align-self: center;
+}
 
-.footer-endereco { grid-area: endereco; justify-self: start; }
-.footer-horario { grid-area: horario; justify-self: end; text-align: right; }
+.redes-sociais-footer {
+  grid-area: redes;
+  justify-self: start;
+  align-self: center;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
 
-.footer-contatos { grid-area: contatos; justify-self: start; }
-.footer-politica { grid-area: politica; justify-self: end; text-align: right; }
+.footer-topo {
+  grid-area: topo;
+  justify-self: center;
+  align-self: center;
+}
 
-.dev-partner { grid-area: dev; justify-self: center; text-align: center; }
+.footer-responsavel {
+  grid-area: responsavel;
+  justify-self: end;
+  text-align: right;
+}
+
+.footer-endereco {
+  grid-area: endereco;
+  justify-self: start;
+}
+
+.footer-horario {
+  grid-area: horario;
+  justify-self: end;
+  text-align: right;
+}
+
+.footer-contatos {
+  grid-area: contatos;
+  justify-self: start;
+}
+
+.footer-politica {
+  grid-area: politica;
+  justify-self: end;
+  text-align: right;
+}
+
+.dev-partner {
+  grid-area: dev;
+  justify-self: center;
+  text-align: center;
+}
 
 /* Ajustes visuais mínimos (sem modinha) */
 /* FOOTER */
