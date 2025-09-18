@@ -13,23 +13,22 @@
     /* Ordem dos elementos */
     .redes-sociais {
         order: 1;
-        /* fica em cima */
         display: flex;
-        /* mantém os ícones lado a lado */
         justify-content: center;
-        /* centraliza horizontalmente */
         gap: 12px;
-        /* espaço entre os ícones */
+        list-style: none;
     }
 
-    .logo {
+    .redes-sociais a {
+        text-decoration: none;
+    }
+
+    .logo-footer {
         order: 2;
-        /* no meio */
     }
 
     .whatsapp-link {
         order: 3;
-        /* embaixo */
     }
 
     /* Ajustes finos */
@@ -147,7 +146,6 @@
 ======================= */
 @media (max-width: 768px) {
 
-    /* Esconde nav horizontal */
     .nav ul {
         flex-direction: column;
         max-height: 0;

@@ -39,25 +39,24 @@
 /* Redes sociais */
 .redes-sociais {
   display: flex;
+  font-size: 30px;
   gap: 15px;
 }
 
 .redes-sociais a {
-  font-size: 20px;
   color: #4d4310;
   transition: color 0.3s ease;
   padding-right: 30px;
 }
 
 .redes-sociais a:hover {
-  color: #ffd9009f;
-  /* cor no hover */
+  color: #C0C0C0;
 }
 
 .divider {
   width: 100%;
-  height: 5px;
-  background-color: #ffd9009f;
+  height: 10px;
+  background-color: #C0C0C0;
   margin-top: 5px;
 }
 
@@ -433,4 +432,24 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
+}
+
+.mapa {
+  margin-top: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 350px; /* controla o tamanho no desktop */
+}
+
+.mapa iframe {
+  display: block;
+  width: 100%;
+  height: 200px; /* altura do quadrado */
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #ccc; /* cor da linha */
+  margin: 15px 0; /* espaço antes/depois */
 }
