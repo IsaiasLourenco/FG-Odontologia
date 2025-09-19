@@ -1,3 +1,7 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 /* Estilos gerais do header */
 .main-header {
   display: flex;
@@ -16,7 +20,7 @@
   justify-content: center;
   gap: 8px;
   background-color: #18953b;
-  color: #fff;
+  color: white !important;
   text-decoration: none;
   padding: 10px 18px;
   font-weight: bold;
@@ -26,7 +30,7 @@
 
 .proposito .whatsapp-link a:hover {
   background-color: #5dc87b;
-  color: white;
+  color: #555 !important;
 }
 
 .especialidades .whatsapp-link a {
@@ -35,7 +39,7 @@
   justify-content: center;
   gap: 8px;
   background-color: #18953b;
-  color: #fff;
+  color: white;
   text-decoration: none;
   padding: 10px 18px;
   font-weight: bold;
@@ -45,7 +49,7 @@
 
 .especialidades .whatsapp-link a:hover {
   background-color: #5dc87b;
-  color: white;
+  color: #555;
 }
 
 .whatsapp-link a {
@@ -53,7 +57,7 @@
   align-items: center;
   gap: 8px;
   background-color: #18953b;
-  color: #fff;
+  color: white;
   text-decoration: none;
   padding: 10px 18px;
   font-weight: bold;
@@ -63,7 +67,7 @@
 
 .whatsapp-link a:hover {
   background-color: #5dc87b;
-  /* azul mais escuro no hover */
+  color: #555;
 }
 
 /* Logo central */
@@ -109,7 +113,7 @@
 }
 
 .bg-gradiente-prata {
-  background-image: linear-gradient(90deg, #000000, #C0C0C0, #000000);
+  background-image: linear-gradient(90deg, #7a7a7a, #d9d9d9, #7a7a7a);
   transition: .40s ease-in-out;
 }
 
@@ -154,7 +158,6 @@
   font-weight: bold;
   text-transform: uppercase;
   transition: color 0.3s;
-  font-family: 'Roboto', sans-serif;
 }
 
 .nav ul li:hover {
@@ -163,11 +166,6 @@
 
 .proposito h2 {
   font-size: 28px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.proposito p {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .swiper {
@@ -188,10 +186,9 @@
    ---------------------- */
 .footer {
   padding: 40px;
-  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   background: linear-gradient(135deg, #c0c0c0, #e0e0e0, #a9a9a9);
-  color: #111;
+  color: #333;
 }
 
 .divider {
@@ -391,13 +388,11 @@
 
 .contato h4 {
   font-size: 15px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .contato h2 {
   padding: 20px;
   font-size: 28px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Ajusta os títulos */
@@ -405,12 +400,10 @@
   text-align: center;
   font-size: 24px;
   margin-bottom: 10px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Texto padrão */
 .agendamento p {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
   margin: 4px 0;
 }
@@ -446,10 +439,6 @@
   align-items: center;
 }
 
-.agendamento .contatos {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 .preto {
   color: black;
 }
@@ -461,10 +450,6 @@
 .centro {
   display: flex;
   align-items: center;
-}
-
-.corpo h3 {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .link-neutro,
@@ -489,54 +474,39 @@
   border-radius: 8px;
   overflow: hidden;
   max-width: 350px;
-  /* controla o tamanho no desktop */
 }
 
 .mapa iframe {
   display: block;
   width: 100%;
   height: 200px;
-  /* altura do quadrado */
 }
 
 hr {
   border: 0;
   border-top: 1px solid #ccc;
-  /* cor da linha */
   margin: 15px 0;
-  /* espaço antes/depois */
 }
 
 .politica-privacidade {
   background-color: #f9f9f9;
-  /* Cor de fundo suave */
   padding: 40px 20px;
-  /* Espaçamento interno */
   margin: 20px auto;
-  /* Margem entre a política e outros elementos */
   max-width: 800px;
-  /* Largura máxima para melhor leitura */
   border-radius: 8px;
-  /* Bordas arredondadas */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* Sombra suave para destaque */
 }
 
 .politica-privacidade h2 {
   text-align: center;
   font-size: 2.5rem;
-  /* Tamanho de título */
-  color: #333;
-  /* Cor do título */
+  color: #555;
   margin-bottom: 20px;
-  /* Espaço abaixo do título */
-  font-family: 'Arial', sans-serif;
-  /* Fonte moderna */
 }
 
 .politica-privacidade h3 {
   font-size: 1.6rem;
-  color: #444;
+  color: #555;
   margin-top: 20px;
   font-weight: bold;
 }
@@ -545,16 +515,13 @@ hr {
   font-size: 1rem;
   color: #555;
   line-height: 1.6;
-  /* Maior espaçamento entre linhas para melhor leitura */
   text-align: justify;
   margin-bottom: 15px;
 }
 
 .politica-privacidade ul {
   list-style: inside;
-  /* Marca os itens dentro do bloco */
   padding-left: 0;
-  /* Remove o espaçamento da lista */
 }
 
 .politica-privacidade ul li {
@@ -564,53 +531,38 @@ hr {
 }
 
 .politica-privacidade a {
-  color: #000000;
-  /* Cor para links */
+  color: #555;
   text-decoration: none;
-  /* Remove o sublinhado */
   font-weight: bold;
 }
 
 .politica-privacidade a:hover {
   text-decoration: none;
-  /* Sublinha o link ao passar o mouse */
   color: #C0C0C0;
-  /* Muda a cor ao passar o mouse */
 }
 
 .politica-privacidade .divider {
   margin-top: 30px;
   margin-bottom: 30px;
   border-top: 1px solid #ddd;
-  /* Linha divisória sutil */
 }
 
 .corpo,
 .especialidades {
   background-color: #f9f9f9;
-  /* Fundo suave */
   padding: 40px 20px;
-  /* Espaçamento interno */
   margin: 20px auto;
-  /* Margem entre os outros elementos */
   max-width: 800px;
-  /* Largura máxima para boa leitura */
   border-radius: 8px;
-  /* Bordas arredondadas */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* Sombra suave */
 }
 
 .corpo h2,
 .especialidades h3 {
   text-align: center;
   font-size: 2.5rem;
-  /* Tamanho do título principal */
-  color: #333;
-  /* Cor escura para títulos */
+  color: #444;
   margin-bottom: 20px;
-  font-family: 'Arial', sans-serif;
-  /* Fonte moderna */
 }
 
 .corpo h3,
@@ -624,9 +576,8 @@ hr {
 .corpo p,
 .especialidades p {
   font-size: 1rem;
-  color: #555;
+  color: #444;
   line-height: 1.6;
-  /* Maior espaçamento entre linhas para leitura */
   text-align: justify;
   margin-bottom: 15px;
 }
@@ -634,81 +585,62 @@ hr {
 .corpo ul,
 .especialidades ul {
   list-style: inside;
-  /* Marca os itens dentro do bloco */
   padding-left: 0;
 }
 
 .corpo ul li,
 .especialidades ul li {
   font-size: 1rem;
-  color: #555;
+  color: #444;
   margin-bottom: 10px;
 }
 
 .corpo a,
 .especialidades a {
-  color: #000000;
-  /* Cor para links */
+  color: #444;
   text-decoration: none;
-  /* Remove o sublinhado */
   font-weight: bold;
 }
 
 .corpo a:hover,
 .especialidades a:hover {
   text-decoration: none;
-  /* Sublinha o link ao passar o mouse */
   color: #C0C0C0;
-  /* Muda a cor ao passar o mouse */
 }
 
 .divider {
   margin-top: 30px;
   margin-bottom: 30px;
   border-top: 1px solid #ddd;
-  /* Linha divisória sutil */
 }
 
 .proposito {
   background-color: #f9f9f9;
-  /* Fundo suave */
   padding: 40px 20px;
-  /* Espaçamento interno */
   margin: 20px auto;
-  /* Margem entre os outros elementos */
   max-width: 800px;
-  /* Largura máxima para boa leitura */
   border-radius: 8px;
-  /* Bordas arredondadas */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* Sombra suave */
 }
 
 .proposito h2 {
   text-align: center;
   font-size: 2.5rem;
-  /* Tamanho do título principal */
-  color: #333;
-  /* Cor escura para títulos */
+  color: #444;
   margin-bottom: 20px;
-  font-family: 'Arial', sans-serif;
-  /* Fonte moderna */
 }
 
 .proposito p {
   font-size: 1rem;
-  color: #555;
+  color: #444;
   line-height: 1.6;
-  /* Maior espaçamento entre linhas para leitura */
   text-align: justify;
   margin-bottom: 20px;
 }
 
 .proposito a {
-  color: #000000;
-  /* Cor para links */
+  color: #333;
   text-decoration: none;
-  /* Remove o sublinhado */
   font-weight: bold;
 }
 
@@ -716,7 +648,5 @@ hr {
 .proposito a:focus,
 .proposito a:visited {
   text-decoration: none;
-  /* Sublinha o link ao passar o mouse */
   color: #C0C0C0;
-  /* Muda a cor ao passar o mouse */
 }
