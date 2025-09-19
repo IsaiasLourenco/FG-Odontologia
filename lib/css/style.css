@@ -83,11 +83,12 @@ body {
 .redes-sociais {
   display: flex;
   font-size: 30px;
+  color: #757474;
   gap: 15px;
 }
 
 .redes-sociais a {
-  color: #4d4310;
+  color: #757474;
   transition: color 0.3s ease;
   padding-right: 30px;
 }
