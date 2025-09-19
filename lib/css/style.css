@@ -14,42 +14,9 @@ body {
 
 /* Botão do WhatsApp */
 
-.proposito .whatsapp-link a {
+.reviews-whatsapp {
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 8px;
-  background-color: #18953b;
-  color: white !important;
-  text-decoration: none;
-  padding: 10px 18px;
-  font-weight: bold;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-}
-
-.proposito .whatsapp-link a:hover {
-  background-color: #5dc87b;
-  color: #555 !important;
-}
-
-.especialidades .whatsapp-link a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  background-color: #18953b;
-  color: white;
-  text-decoration: none;
-  padding: 10px 18px;
-  font-weight: bold;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-}
-
-.especialidades .whatsapp-link a:hover {
-  background-color: #5dc87b;
-  color: #555;
 }
 
 .whatsapp-link a {
@@ -118,16 +85,6 @@ body {
   transition: .40s ease-in-out;
 }
 
-.bg-gradiente-dourado {
-  background-image: linear-gradient(90deg, #FFD700, #39320a);
-  transition: .40s ease-in-out;
-}
-
-.bg-gradiente-dourado-contrario {
-  background-image: linear-gradient(90deg, #39320a, #FFD700);
-  transition: .40s ease-in-out;
-}
-
 /* Nav (menu) */
 .nav {
   width: 100%;
@@ -165,8 +122,10 @@ body {
   color: #4a4b50;
 }
 
-.proposito h2 {
-  font-size: 28px;
+.a-clinica h2 {
+  font-size: 36px;
+  text-align: center;
+  font-weight: bold;
 }
 
 .swiper {
@@ -650,4 +609,35 @@ hr {
 .proposito a:visited {
   text-decoration: none;
   color: #C0C0C0;
+}
+
+.reviews-swiper .review {
+  background: #f8f8f8;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reviews-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.reviews-section h2 {
+  margin-bottom: 30px;
+}
+
+.clinica-swiper .swiper-slide {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clinica-swiper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
