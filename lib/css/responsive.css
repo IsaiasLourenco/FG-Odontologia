@@ -300,3 +300,49 @@
         font-size: 2rem;
     }
 }
+
+@media (max-width: 768px) {
+  .swiper-clinica {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: unset;
+    padding: 0 16px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .swiper-clinica .swiper-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .swiper-clinica .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-clinica .swiper-slide img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .proposito .whatsapp-link a {
+    margin-bottom: 40px !important;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .especialidades .whatsapp-link a {
+    margin-bottom: 40px !important;
+    display: flex;
+    justify-content: center;
+  }
+
+}

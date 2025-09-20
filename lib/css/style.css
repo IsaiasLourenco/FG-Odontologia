@@ -22,11 +22,11 @@ body {
 }
 
 .proposito .whatsapp-link a {
-  color: white;
+  color: white !important;
 }
 
 .proposito .whatsapp-link a:hover {
-  color: #555;
+  color: #555 !important;
 }
 
 .whatsapp-link a {
@@ -142,21 +142,50 @@ body {
 
 .swiper {
   width: 100%;
-  max-width: 600px; /* menor largura para formato vertical */
-  aspect-ratio: 1 / 1.414; /* proporção A4 */
+  max-width: 1200px;
+  height: 500px;
   margin: 0 auto;
 }
 
-.swiper-slide {
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-clinica h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.swiper-clinica {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  overflow: hidden;
+}
+
+.swiper-clinica .swiper-wrapper {
+  display: flex;
+  transition-timing-function: ease-in-out;
+}
+
+.swiper-clinica .swiper-slide {
+  flex-shrink: 0;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.swiper-slide img {
+.swiper-clinica .swiper-slide img {
+  width: auto;
   max-width: 100%;
-  max-height: 100%;
-  object-fit: contain; /* preserva proporção vertical */
+  max-height: 800px;
+  object-fit: contain;
+  margin: 0 auto;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
