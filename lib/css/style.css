@@ -287,8 +287,6 @@ body {
   text-align: center;
 }
 
-/* Ajustes visuais mínimos (sem modinha) */
-/* FOOTER */
 .logo-footer img {
   height: 400px;
   width: 400px;
@@ -319,13 +317,13 @@ body {
 
 .footer .footer-container .footer-endereco a:hover {
   text-decoration: none;
-  color: red;
+  color: #757474;
   font-weight: bold;
 }
 
 .footer .footer-container .footer-contatos a:hover {
   text-decoration: none;
-  color: #18953b;
+  color: #757474;
   font-weight: bold;
 }
 
@@ -345,7 +343,7 @@ body {
 }
 
 .footer p a {
-  color: coral;
+  color: #757474;
   font-weight: bold;
 }
 
