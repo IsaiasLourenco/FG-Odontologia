@@ -560,7 +560,8 @@ hr {
 }
 
 .corpo,
-.especialidades {
+.especialidades,
+.tratamentos{
   background-color: #f9f9f9;
   padding: 40px 20px;
   margin: 20px auto;
@@ -572,7 +573,8 @@ hr {
 }
 
 .corpo h2,
-.especialidades h3 {
+.especialidades h3,
+.tratamentos h4{
   text-align: center;
   font-size: 2.5rem;
   color: #444;
@@ -580,7 +582,8 @@ hr {
 }
 
 .corpo h3,
-.especialidades h4 {
+.especialidades h4,
+.tratamentos h2 {
   font-size: 1.8rem;
   color: #444;
   margin-top: 20px;
@@ -610,14 +613,16 @@ hr {
 }
 
 .corpo a,
-.especialidades a {
+.especialidades a,
+.tratamentos a {
   color: #444;
   text-decoration: none;
   font-weight: bold;
 }
 
 .corpo a:hover,
-.especialidades a:hover {
+.especialidades a:hover,
+.tratamentos a:hover {
   text-decoration: none;
   color: #C0C0C0;
 }
@@ -667,22 +672,6 @@ hr {
   color: #C0C0C0;
 }
 
-.reviews-swiper .review {
-  background: #f8f8f8;
-  border-radius: 8px;
-  padding: 15px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.reviews-section {
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.reviews-section h2 {
-  margin-bottom: 30px;
-}
-
 .modal {
   display: none;
   position: fixed;
@@ -692,19 +681,72 @@ hr {
   width: 100%;
   height: 100%;
   background-color: rgba(0,0,0,0.6);
+  overflow-y: auto;
 }
 
 .modal-content {
   background-color: #fff;
-  margin: 10% auto;
-  padding: 20px;
-  border-radius: 8px;
+  margin: 5% auto;
+  padding: 40px;
+  border-radius: 12px;
   width: 90%;
-  max-width: 500px;
+  max-width: 800px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-header h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: center;
+}
+
+.modal-body .divider {
+  width: 100%;
+  height: 10px;
+  background-color: #C0C0C0;
+  border: none;
+  height: 2px;
+}
+
+.modal-button {
+  display: inline-block;
+  margin: 40px auto 0 auto;
+  padding: 12px 24px;
+  background-color: #e0e0e0; /* prata claro */
+  color: #444; /* cinza escuro */
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+.modal-button:hover {
+  background-color: #acaaaa;
+}
+
+.modal-body p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+  text-align: justify;
 }
 
 .close {
-  float: right;
+  position: absolute;
+  top: 20px;
+  right: 30px;
   font-size: 28px;
+  font-weight: bold;
+  color: #999;
   cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
