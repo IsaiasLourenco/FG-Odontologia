@@ -685,6 +685,7 @@ hr {
 }
 
 .modal-content {
+  position: relative;
   background-color: #fff;
   margin: 5% auto;
   padding: 40px;
@@ -739,11 +740,12 @@ hr {
 .close {
   position: absolute;
   top: 20px;
-  right: 30px;
+  right: 20px;
   font-size: 28px;
   font-weight: bold;
   color: #999;
   cursor: pointer;
+  z-index: 1;
 }
 
 @keyframes fadeIn {
